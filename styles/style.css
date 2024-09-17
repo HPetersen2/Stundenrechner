@@ -1,0 +1,30 @@
+/* Hupsi Leberkäs: D7372B */
+
+header {
+    background-color: #DDDDDD;
+}
+.header-content {
+    max-width: 1920px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 48px;
+}
+.header-content img {
+    width: 128px;
+    margin-right: 24px;
+}
+.content {
+    max-width: 1920px;
+    margin-left: 48px;
+    margin-right: 48px;
+}
+.input-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.accept-time {
+    margin-top: 24px;
+}
