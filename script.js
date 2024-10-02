@@ -1,4 +1,8 @@
 
+function init() {
+    listEmployee();
+}
+
 function acceptTime() {
     let date = document.getElementById('workday-date').value;
     let startTime = document.getElementById('start-time').value;
@@ -7,3 +11,9 @@ function acceptTime() {
 
 
 }
+
+// function listEmployee() {
+//     let employee = document.getElementById('employee');
+//     console.log(listEmployee);
+//     document.getElementById('employee-list').innerHTML = `Mitarbeiter: ${employee}`;
+// }
