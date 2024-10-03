@@ -1,51 +1,46 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./script.js"></script>
-    <link rel="stylesheet" href="./styles/standard.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/standard.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Stundenkalkulator</title>
-</head>
-<body onload="init()">
+  </head>
+  <body>
     <header>
-        <div class="header-content">
-            <img src="./assets/img/Logo_bunt-removebg.png" alt="logo">
-            <h1>Fleischerei Hartwiger und Petersen</h1>
-        </div>
+      <div class="header-content">
+        <img src="./assets/img/Logo_bunt-removebg.png" alt="logo" />
+        <h1>Fleischerei Hartwiger und Petersen</h1>
+      </div>
     </header>
     <main>
-    <div class="content">
-            <h2>Stundenrechner</h2>
-            <nav>
-                <div class="nav-links">
-                    <a href="./index.html">Start</a>
-                    <a href="./change_parameter.html">Mitarbeiter bearbeiten</a>
-                </div>
-            </nav>
-        <div class="select-employee">
+      <div class="content">
+        <h2>Stundenrechner</h2>
+        <form onsubmit="acceptTime()">
+          <div class="select-employee">
             <label for="employee">Mitarbeiter:</label>
-            <select name="employee" id="employee">
-                <option value=""disabled selected>Auswählen ...</option>
-                <option value="Andrea Brauns">Andrea Brauns</option>
+            <select required name="employee" id="employee">
+              <option value="" disabled selected>Auswählen ...</option>
+              <option value="Andrea Brauns">Andrea Brauns</option>
             </select>
-        </div>
-        <div class="input-time">
+          </div>
+          <div class="input-time">
             <label for="date">Datum des Arbeitstages:</label>
-            <input type="date" id="workday-date">
+            <input required type="date" id="workday-date" />
 
             <label for="start-time">Arbeitsbeginn:</label>
-            <input type="time" id="start-time" min="03:00">
+            <input min="05:00" required type="time" id="start-time" min="03:00" />
 
             <label for="end-time">Arbeitsende:</label>
-            <input type="time" id="end-time">
-
-        </div>
-        <div class="accept-time">
-            <button onclick="acceptTime()">Zeit buchen</button>
-        </div>
-    </div>
+            <input max="22:00" required type="time" id="end-time" />
+          </div>
+          <div class="accept-time">
+            <button>Zeit buchen</button>
+          </div>
+        </form>
+      </div>
     </main>
-</body>
+  </body>
 </html>

@@ -14,16 +14,13 @@ header {
     width: 128px;
     margin-right: 24px;
 }
-.nav-links {
-    display: flex;
-    gap: 24px;
-    padding-bottom: 48px;
-    background-color: rgba(0, 0, 0, 0.05);
-}
 .content {
     max-width: 1920px;
     margin-left: 48px;
     margin-right: 48px;
+}
+.select-employee {
+    margin: 20px 0 20px;
 }
 .input-time {
     display: flex;
